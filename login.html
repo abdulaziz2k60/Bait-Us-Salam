@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-image: url(images/bg\ \(8\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(158,29,99,1) 100%); */
+        }
+    </style>
 </head>
+
 
 <body>
     <header>
         <div class="website-heading">
-            <h1> <a href="index.html">Silk Road</a> </h1>
+            <h1> <a href="index.html">Bait-Us-Salam</a> </h1>
         </div>
         <div class="nav">
             <nav>
                 <ul>
                     <li><a href="index.html"> Home </a> </li>
                     <li><a href="dashboard.html"> Dashboard </a> </li>
-                    <li><a href="login.html"> Login </a> </li>
                     <li><a href="contact.html"> Contact Us </a> </li>
                     <li><a href="about.html"> About Us </a> </li>
+                    <li><a href="login.html"> Login </a> </li>
                 </ul>
 
             </nav>
@@ -28,15 +39,26 @@
 
     </header>
 
-    <h1>Login</h1>
 
-    <div class="form">
+
+    <div class="login-form">
+
+        <h1>Login</h1>
+
         <form action="">
-            <label for="email">Email :</label>
-            <input type="email" name="email" id=""><br>
-            <label for="password">Password :</label>
-            <input type="password" name="password" id="">
+
+            <label for="uname"><b>Username / Email</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button  type="submit">Login</button><br><br>
+
+            <span> Didn't have an account / <a href="signup.html">Sign Up </a></span>
+          
         </form>
+
     </div>
 
 </body>
